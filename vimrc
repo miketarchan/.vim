@@ -30,6 +30,13 @@ set hlsearch
 set incsearch
 set expandtab
 set tabstop=2
+" Disable bell
+set noerrorbells
+set vb t_vb=
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " Fix clipboard 
 if system('uname -s') == "Darwin\n"
