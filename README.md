@@ -1,6 +1,9 @@
 # This is my VIM config
 
-Needs to install junegunn/vim-plug for properly working.
-Don't forget to make symlink the vim/vimrc file the ~/.vimrc
-After that open vim and type :PlugInstall
-Have fun :)
+- Needs to install junegunn/vim-plug for properly working.
+
+- The make symlink ~/.vimrc file for vim/vimrc file
+
+- After that open vim and type :PlugInstall
+
+- Have fun :)
