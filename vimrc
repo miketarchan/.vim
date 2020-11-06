@@ -7,19 +7,18 @@ endif
 
 " Plugins
 call plug#begin('~/.vim/plugged')
-
-" Make sure you use single quotes
-        Plug 'tpope/vim-fugitive'
-        Plug 'vim-airline/vim-airline'
-        Plug 'vim-airline/vim-airline-themes'
-        Plug 'scrooloose/nerdtree'
-        Plug 'mhinz/vim-startify'
-        Plug 'airblade/vim-gitgutter'
-        Plug 'morhetz/gruvbox'
-        Plug 'tpope/vim-surround'
-        Plug 'ap/vim-css-color'
-        Plug 'editorconfig/editorconfig-vim'
-" Initialize plugin system
+    " Make sure you use single quotes
+    Plug 'tpope/vim-fugitive'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'scrooloose/nerdtree'
+    Plug 'mhinz/vim-startify'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'morhetz/gruvbox'
+    Plug 'tpope/vim-surround'
+    Plug 'ap/vim-css-color'
+    Plug 'editorconfig/editorconfig-vim'
+    " Initialize plugin system
 call plug#end()
 
 " Enable Color Scheme
