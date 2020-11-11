@@ -9,21 +9,28 @@ endif
 call plug#begin('~/.vim/plugged')
     " Make sure you use single quotes
     Plug 'tpope/vim-fugitive'
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
     Plug 'scrooloose/nerdtree'
+    Plug 'itchyny/lightline.vim'
     Plug 'mhinz/vim-startify'
     Plug 'airblade/vim-gitgutter'
     Plug 'morhetz/gruvbox'
     Plug 'tpope/vim-surround'
     Plug 'ap/vim-css-color'
     Plug 'editorconfig/editorconfig-vim'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'marlonfan/coc-phpls'
+    Plug 'neoclide/coc-prettier'
     " Initialize plugin system
 call plug#end()
 
 " Enable Color Scheme
 colorscheme gruvbox
 set background=dark
+
+set regexpengine=1
+set noshowcmd
+set synmaxcol=200
+
 
 filetype plugin indent on 
 syntax on
@@ -32,10 +39,13 @@ set nocompatible
 set encoding=utf-8
 " set spell spelllang=en_us
 
+" Disable show editore mode, since the lightline is showing it
+set noshowmode
 " Added for quick find(ing)
 set path+=**
 " Relative Number
 set rnu
+set number
 
 set ruler
 set cursorline
@@ -91,6 +101,10 @@ endif
 " Toggle NERDTree Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
 " Command to quickly open this file
-command! Config execute "e $MYVIMRC"
+command! Config execute "e ~/.vim/vimrc"
 "Command to quick reload the vim configuration
 command! Reload execute "so $MYVIMRC"
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
